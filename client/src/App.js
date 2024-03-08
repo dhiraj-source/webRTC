@@ -1,10 +1,14 @@
 
+import { Routes ,Route} from 'react-router-dom';
 import './App.css';
+import LobbyScreen from './screens/Lobby';
 
 function App() {
   return (
     <div className="App">
-      <h1>Chat Application</h1>
+      <Routes>
+        <Route path="/" element={<h1><LobbyScreen/></h1>} />
+      </Routes>
     </div>
   );
 }
